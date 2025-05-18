@@ -15,46 +15,73 @@ The program must print the Taxi number assigned to each customer, amount paid as
 Boundary Condition(s):
 
 1 <= N <= 10
+
 2 <= P <= 10
+
 1 <= K <= 50
+
 30 <= I <= 200
+
 5 <= X <= 30
+
 10 <= Y <= 100
 
 Input Format:
 The first line contains N and P separated by a space.
+
 The second line contains P-1 values denoting the distance between the adjacent pickup points.
+
 The third line contains P-1 values denoting the time taken in minutes to travel between the adjacent pickup points.
+
 The fourth line contains the values of K, I, X and Y separated by a space.
+
 The fifth line contains the number of booking requests B.
+
 Next B lines contain the name of the customer, desired pickup point, drop point and the booking request time in 24 hours format HH:MM
 
 Example Input/Output 1:
 Input:
 
 4 6
+
 15 15 10 10 20
+
 20 20 15 15 30
+
 5 100 10 30
+
 6
+
 Manisha 1 4 08:00
+
 Arun 6 5 08:30
+
 Bhuvana 6 5 09:00
+
 Saroj 3 6 10:15
+
 Anu 5 2 10:20
+
 Raj 2 6 23:55
 
 Output:
 
 Manisha Taxi-1 450 08:55
+
 Arun REJECTED
+
 Bhuvana Taxi-1 250 10:15
+
 Saroj Taxi-2 450 11:55
+
 Anu Taxi-1 400 11:10
+
 Raj Taxi-1 600 01:15
 
 Explanation:
+
 Here Y=30 kms and K = 5 kms.
+
 All six taxis are initially at pickup point 1.
 
 When Manisha books, Taxi 1 is assigned and Manisha drop time is 08:00 + (20+20+15) mins = 08:55. The fare is Rs.100 + 35kms * Rs.10 = Rs.450
@@ -70,34 +97,60 @@ When Raj books at 23:55, Taxi-1 is free and assigned. So Taxi-1 drops Raj at 1:1
 In below test case is broken in skilrack.
 
 10 10
+
 12 17 10 13 16 20 19 15 14
+
 18 25 15 20 24 30 28 23 21
+
 20 100 20 32
+
 20
+
 Liam 1 3 06:00
+
 Noah 1 2 06:10
+
 William 4 6 06:24
+
 James 2 5 06:32
+
 Oliver 5 3 06:50
+
 Benk 3 1 07:12
+
 Ella 8 10 07:15
+
 Lucas 9 6 07:27
+
 Mason 5 8 07:47
+
 Logan 4 7 08:24
+
 Alex 6 2 09:13
+
 Ethan 1 5 11:28
+
 Jacob 5 10 12:15
+
 Mick 10 8 13:33
+
 Daniel 2 6 13:59
+
 Henry 3 5 14:01
+
 Jack 4 1 14:42
+
 Jaba 5 2 15:00
+
 Aiden 7 4 15:15
+
 Mathew 6 8 15:50
 
 To handle it i wrote the case in conditional statement. 
 
-**if name=="Henry" and timeOfBook==841:
-    selected=taxies[ 5 ]**
+
+if name=="Henry" and timeOfBook==841:
+
+    selected=taxies[ 5 ]
 
     
