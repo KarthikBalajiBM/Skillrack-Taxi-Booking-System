@@ -13,6 +13,7 @@ If a taxi is free at the time of booking request and the booking is accepted the
 
 The program must print the Taxi number assigned to each customer, amount paid as fare and the drop time.
 Boundary Condition(s):
+
 1 <= N <= 10
 2 <= P <= 10
 1 <= K <= 50
